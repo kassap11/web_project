@@ -1,0 +1,164 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+
+
+
+.con-nav {
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo img {
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.nav-bar ul li {
+    display: inline;
+    word-spacing: 100px;
+
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    margin-top: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline 3px solid;
+
+}
+
+a:active {
+    color: aqua;
+    background: pink;
+}
+
+a:visited {
+    color: red;
+}
+
+.content {
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* border: solid; */
+}
+
+div.col-top {
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+
+}
+
+.col-top {
+    text-align: center;
+}
+
+.col {
+    width: 80%;
+    height: 500px;
+    background: linear-gradient(white, lightgray);
+    margin-left: 10%;
+    border-radius: 50px;
+
+
+}
+
+.col:hover {
+    box-shadow: 0 1px 9px 7px rgb(195, 141, 141);
+}
+
+h1 {
+    font-style: italic;
+}
+
+#caption {
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+
+#caption h1 {
+    text-align: center;
+}
+
+fieldset {
+    border: solid brown 2px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        display: flex;
+        height: 80%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bar ul li {
+        display: flex;
+        word-spacing: 100px;
+
+    }
+    .col {
+        width: 70%;
+        height: 500px;
+        background: linear-gradient(white, lightgray);
+        margin:auto;
+        border-radius: 50px;
+    
+    
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 900px) {
+    body {
+        background-color:burlywood;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        display: flex;
+        height: 80%;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .col {
+        width: 70%;
+        height: 500px;
+        background: linear-gradient(white, lightgray);
+        margin:auto;
+        border-radius: 50px;
+    
+    
+    }
+}
